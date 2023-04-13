@@ -1,5 +1,20 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+
+  // hasTargetSum([array], target);
+  // iterate thro each number in array;
+  // for a number get a number that adds to the  target(number1+number2=target)
+  // if sum adds up to equal target return true
+  // if else return false
+
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
@@ -7,7 +22,11 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  hasTargetSum([array], target);
+  iterate thro each number in array;
+  for a number get a number that adds to te target(number1+number2=target)
+  if sum adds up to equal target return true
+  if else return false
 */
 
 /*
